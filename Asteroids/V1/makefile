@@ -13,18 +13,18 @@ newPosP3 : newPosP3.c
 headerP4 : headerP4.c
 	gcc -ansi -pedantic -g -o headerP4 headerP4.c
 
-lab2 : lab2.o libasteroids.h
-	gcc -o lab2 lab2.o -L. -lasteroids -lncurses
+Asteroids-1.0 : Asteroids-1.0.o libasteroids.h
+	gcc -o Asteroids-1.0 Asteroids-1.0.o -L. -lasteroids -lncurses
 
-lab2.o: lab2.c libasteroids.h
-	gcc -ansi -pedantic -c lab2.c
+Asteroids-1.0.o: Asteroids-1.0.c libasteroids.h
+	gcc -ansi -pedantic -c Asteroids-1.0.c
 
-lab2.zip: makefile *.c README_LAB2
-	zip lab2 *.c README_LAB2 makefile
+Asteroids-1.0.zip: makefile *.c README_1.0.md
+	zip Asteroids-1.0 *.c README_1.0.md makefile
 	rm -rf install
 	mkdir install
-	unzip lab2.zip -d install
-	make -C install lab2
+	unzip Asteroids-1.0.zip -d install
+	make -C install Asteroids-1.0
 
 
 
