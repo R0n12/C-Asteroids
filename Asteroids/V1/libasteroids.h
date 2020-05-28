@@ -21,7 +21,7 @@ void al_clear();
 void al_refresh();
 
 
-/* not required for lab2 */
+/* not required for Version 1 */
 void al_status(const char *statstr);
 int al_version();
 
